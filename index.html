@@ -1,0 +1,20 @@
+---
+layout: default
+idx: start
+title: Hendrik Gebhardt
+---
+<h2>Social Networks</h2>
+<ul class="unstyled">
+  <li><a href="https://www.facebook.com/hendrik.gebhardt">Facebook</a></li>
+  <li><a href="https://twitter.com/hgebhardt">Twitter</a></li>
+  <li><a href="https://foursquare.com/hgebhardt">foursquare</a></li>
+  <li><a href="https://github.com/hgebhardt">GitHub</a></li>
+  <li><a href="https://www.xing.com/profile/Hendrik_Gebhardt">XING</a></li>
+</ul>
+
+<h2>Neu im <a href="/blog">Blog</a></h2>
+<ul class="unstyled posts">
+{% for post in site.posts limit:3 %}
+  <li><span>{{ post.date | date: "%d.%m.%Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
