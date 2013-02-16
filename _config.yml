@@ -1,1 +1,11 @@
 permalink: /blog/:year/:month/:day/:title
+
+navigation:
+  - text: Start
+    uri: /
+  - text: Blog
+    uri: /blog
+  - text: Projekte
+    uri: /#projekte
+  - text: Über
+    uri: /#ueber

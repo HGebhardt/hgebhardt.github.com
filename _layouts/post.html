@@ -1,9 +1,23 @@
 ---
 layout: default
-idx: blog
+idx: /blog
 ---
-<h2>{{ page.title }}</h2>
-<p>{{ page.date | date: "%d.%m.%Y" }}</p>
-<div id="post">
-{{ content }}
+<div class="page-header">
+  <h1>{{ page.title }}</h1>
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span8" id="post">
+    {{ content }}
+    </div>
+    <div class="span3 offset1 meta">
+      <h3>Meta</h3>
+      <dl>
+        <dt>Veröffentlicht:</dt>
+        <dd>{{ page.date | date: "%d.%m.%Y" }}</dd>
+        <dt>Autor:</dt>
+        <dd>Hendrik</dd>
+      </dl>
+    </div>
+  </div>
 </div>
