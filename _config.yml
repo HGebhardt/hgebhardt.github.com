@@ -3,9 +3,13 @@ permalink: /blog/:year/:month/:day/:title
 navigation:
   - text: Start
     uri: /
+    icon: home
   - text: Blog
     uri: /blog
+    icon: file-alt
   - text: Projekte
     uri: /#projekte
+    icon: beaker
   - text: Über
     uri: /#ueber
+    icon: user
