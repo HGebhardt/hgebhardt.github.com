@@ -8,7 +8,7 @@ navigation:
     uri: /blog
     icon: file-alt
   - text: Projekte
-    uri: /#projekte
+    uri: /projekte
     icon: beaker
   - text: Über
     uri: /#ueber

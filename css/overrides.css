@@ -45,6 +45,25 @@ body {
   text-align: center;
 }
 
+.projects > li {
+  padding-bottom: 20px;
+}
+
+.projects > li > span.year {
+  float: right;
+  font-size: 24px;
+  color: #999;
+}
+
+a[rel="external"]:hover:after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\00a0\f08e";
+}
+
 #disqus_thread {
   padding-top: 30px;
 }

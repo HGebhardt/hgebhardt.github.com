@@ -1,0 +1,86 @@
+---
+layout: default
+idx: /projekte
+title: Projekte
+---
+<div class="page-header">
+  <h1>Projekte</h1>
+</div>
+<div class="container-fluid">
+<ul class="projects unstyled">
+  <li id="spotjotter">
+    <span class="year">2013</span>
+    <h2>SpotJotter <small></small></h2>
+    <ul class="meta unstyled well well-small">
+      <li>Status: <em>development</em>&nbsp;<i class="icon-cogs"></i></li>
+      <li><a href="https://spotjotter.herokuapp.com" rel="external">spotjotter.herokuapp.com</a></li>
+    </ul>
+    <div class="desc">SpotJotter bietet Benutzern ortsgebundene Notizen auf Basis von foursquare-Venues. Bei einem Check-In sendet foursquare eine Push-Benachrichtigung an SpotJotter, welcher eine Auswertung des aktuellen Benutzerstandortes ermöglicht. Sofern in der Datenbank „Jottings“ für das bezogene foursquare-Venue hinterlegt sind, wird eine Antwort an foursquare gesendet, so dass der Benutzer eine Benachrichtigung innerhalb der foursquare-Applikation erhält. Der Dienst ermöglicht somit benutzerdefinierte, ortsbasierte Erinnerungen, die bei Bedarf angezeigt werden.<br>
+      Beim Anlegen von neuen Notizen ist eine Suche gegen die Foursquare-Venue-Datenbank möglich. Um einen möglichst performanten Betrieb zu gewährleisten und nicht die Limits der Foursquare API auszureizen, wird als Cache eine Memcached-Lösung eingesetzt, die ermittelte Suchergebnisse eine bestimmte Zeit zwischenspeichert.</div>
+    <h3>Technologie:</h3>
+    <ul class="tech">
+      <li><a href="http://rubyonrails.org/" rel="external">Ruby on Rails</a></li>
+      <li><a href="http://www.postgresql.org/" rel="external">PostgreSQL</a></li>
+      <li><a href="http://memcached.org/" rel="external">Memcached</a></li>
+      <li><a href="https://developer.foursquare.com/" rel="external">foursquare API</a></li>
+    </ul>
+  </li>
+  <li class="spacer"><hr></li>
+  <li id="quetch">
+    <span class="year">2013</span>
+    <h2>quetch <small>(foursquare Hackathon 2013)</small></h2>
+    <ul class="meta unstyled well well-small">
+      <li>Status: <em>proof&nbsp;of&nbsp;concept</em>&nbsp;<i class="icon-lightbulb"></i></li>
+      <li><a href="https://www.hackerleague.org/hackathons/foursquare-hackathon-2013/hacks/quetch" rel="external">quetch (Foursquare Hackathon 2013)</a></li>
+      <li><a href="https://quetch.herokuapp.com" rel="external">quetch.herokuapp.com</a></li>
+    </ul>
+    <div class="desc">
+      Die Anwendung quetch ist das Ergebnis einer Teamarbeit im Rahmen des foursquare-Hackathons 2013. Sie erlaubt Benutzern Aufgaben zu stellen und Freunde herauszufordern. Die Aufgaben sind jeweils an eine konkrete Ortsangabe und an eine bestimmte Kategorien gebunden. Anhand von Check-Ins auf Foursquare wird der aktuelle Benutzerstandort bestimmt, so dass umgebungsrelevante Aufgaben von Freunden werden ermittelt werden können. Bei Interesse können diese dann angenommen werden, so dass der Aufgabensteller immer auf dem aktuellen Stand ist und den Status im Auge behalten kann.<br>
+      Die Verwendung von Sidekiq in Kombination mit Redis erlaubt die Ausführung von ressourcenintensiven Funktionalitäten im Hintergrund mit loser Kopplung zur eigentlichen Anwendung.
+    </div>
+    <h3>Technologie:</h3>
+    <ul class="tech">
+      <li><a href="http://rubyonrails.org/" rel="external">Ruby on Rails</a></li>
+      <li><a href="http://www.postgresql.org/" rel="external">PostgreSQL</a></li>
+      <li><a href="http://redis.io/" rel="external">Redis</a></li>
+      <li><a href="https://developer.foursquare.com/" rel="external">foursquare API</a></li>
+    </ul>
+  </li>
+  <li class="spacer"><hr></li>
+  <li id="formbot">
+    <span class="year">2012</span>
+    <h2>formbot</h2>
+    <ul class="meta unstyled well well-small">
+      <li>Status: <em>development</em>&nbsp;<i class="icon-cogs"></i></li>
+      <li><a href="https://formbot.herokuapp.com" rel="external">formbot.herokuapp.com</a></li>
+    </ul>
+    <div class="desc">
+      Mit Hilfe der Anwendung formbot lässt sich die Einbindung von Kontaktformulare in Websites vereinfachen. Statt eine serverseitige Mail-Komponente zu integrieren, bietet der Dienst eine einfache Möglichkeit die Formulardaten zu verarbeiten und über definierbare Vorlagen an eine E-Mail-Adresse weiterzuleiten. Die Verwendung der Liquid-Markup-Sprache bietet dabei vielfältige Möglichkeiten bei der Verarbeitung der Daten.
+    </div>
+    <h3>Technologie:</h3>
+    <ul class="tech">
+      <li><a href="http://rubyonrails.org/" rel="external">Ruby on Rails</a></li>
+      <li><a href="http://www.postgresql.org/" rel="external">PostgreSQL</a></li>
+      <li><a href="http://liquidmarkup.org/" rel="external">Liquid Markup</a></li>
+      <li><a href="http://www.mailgun.com/" rel="external">Mailgun API</a></li>
+    </ul>
+  </li>
+  <li class="spacer"><hr></li>
+  <li id="erweiterungen-de">
+    <span class="year">2005&ndash;2009</span>
+    <h2>erweiterungen.de</h2>
+    <ul class="meta unstyled well well-small">
+      <li>Status: <em>discontinued</em>&nbsp;<i class="icon-ban-circle"></i></li>
+      <li><a href="http://www.erweiterungen.de" rel="external">erweiterungen.de</a></li>
+    </ul>
+    <div class="desc">
+      Das Portal erweiterungen.de war über eine Zeit von fünf Jahren die zentrale Anlaufstelle für deutschsprachige Erweiterungen für Mozilla-basierte Anwendungen. Als einfache Liste gestartet, wurden dem Projekt schnell immer mehr Aufgaben zuteil. Insbesondere das Management von verschiedenen Versionen hinsichtlich der Kompatibilität mit Anwendungsversionen und deren Aktualisierungen war eine eine besondere Herausforderung in diesem Projekt. Aufgrund der hohen Zugriffszahlen bedurfte es weiterhin ausgefeilten Caching-Strategien, um die Serverlast möglichst gering zu halten und dennoch eine anwenderfreundliche Umgebung bereitzustellen.
+    </div>
+    <h3>Technologie:</h3>
+    <ul class="tech">
+      <li><a href="http://php.net/">PHP</a>-basiert</li>
+      <li><a href="http://www.smarty.net/" rel="external">Smarty (PHP Template Engine)</a></li>
+      <li><a href="http://www.mysql.com/" rel="external">MySQL</a></li>
+    </ul>
+  </li>
+</ul>
