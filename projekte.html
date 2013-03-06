@@ -15,9 +15,9 @@ title: Projekte
       <li>Status: <em>development</em>&nbsp;<i class="icon-cogs"></i></li>
       <li><a href="https://spotjotter.herokuapp.com" rel="external">spotjotter.herokuapp.com</a></li>
     </ul>
-    <div class="desc">SpotJotter bietet Benutzern ortsgebundene Notizen auf Basis von foursquare-Venues. Bei einem Check-In sendet foursquare eine Push-Benachrichtigung an SpotJotter, welcher eine Auswertung des aktuellen Benutzerstandortes ermöglicht. Sofern in der Datenbank „Jottings“ für das bezogene foursquare-Venue hinterlegt sind, wird eine Antwort an foursquare gesendet, so dass der Benutzer eine Benachrichtigung innerhalb der foursquare-Applikation erhält. Der Dienst ermöglicht somit benutzerdefinierte, ortsbasierte Erinnerungen, die bei Bedarf angezeigt werden.<br>
-      Beim Anlegen von neuen Notizen ist eine Suche gegen die Foursquare-Venue-Datenbank möglich. Um einen möglichst performanten Betrieb zu gewährleisten und nicht die Limits der Foursquare API auszureizen, wird als Cache eine Memcached-Lösung eingesetzt, die ermittelte Suchergebnisse eine bestimmte Zeit zwischenspeichert.</div>
-    <h3>Technologie:</h3>
+    <div class="desc">SpotJotter bietet seinem Benutzer die Möglichkeit ortsgebundener Notizen auf Basis von Foursquare-Venues. Bei einem Check-In sendet Foursquare eine Push-Benachrichtigung an SpotJotter, welcher eine Auswertung des aktuellen Benutzerstandortes ermöglicht. Sofern in der Datenbank „Jottings“ für das bezogene Foursquare-Venue hinterlegt sind, wird eine Antwort an Foursquare gesendet, so dass der Benutzer eine Benachrichtigung innerhalb der Foursquare-Applikation erhält. Der Dienst ermöglicht somit benutzerdefinierte, ortsbasierte Erinnerungen, die bei Bedarf angezeigt werden.<br>
+      Beim Anlegen von neuen Notizen ist eine Suche gegen die Foursquare-Venue-Datenbank möglich. Um einen möglichst performanten Betrieb zu gewährleisten und nicht die Limits der Foursquare-API auszureizen, wird als Cache eine Memcached-Lösung eingesetzt, die vorhandene Suchergebnisse eine bestimmte Zeit lang zwischenspeichert.</div>
+    <h3>Technologien:</h3>
     <ul class="tech">
       <li><a href="http://rubyonrails.org/" rel="external">Ruby on Rails</a></li>
       <li><a href="http://www.postgresql.org/" rel="external">PostgreSQL</a></li>
@@ -34,11 +34,9 @@ title: Projekte
       <li><a href="https://www.hackerleague.org/hackathons/foursquare-hackathon-2013/hacks/quetch" rel="external">quetch (Foursquare Hackathon 2013)</a></li>
       <li><a href="https://quetch.herokuapp.com" rel="external">quetch.herokuapp.com</a></li>
     </ul>
-    <div class="desc">
-      Die Anwendung quetch ist das Ergebnis einer Teamarbeit im Rahmen des foursquare-Hackathons 2013. Sie erlaubt Benutzern Aufgaben zu stellen und Freunde herauszufordern. Die Aufgaben sind jeweils an eine konkrete Ortsangabe und an eine bestimmte Kategorien gebunden. Anhand von Check-Ins auf Foursquare wird der aktuelle Benutzerstandort bestimmt, so dass umgebungsrelevante Aufgaben von Freunden werden ermittelt werden können. Bei Interesse können diese dann angenommen werden, so dass der Aufgabensteller immer auf dem aktuellen Stand ist und den Status im Auge behalten kann.<br>
-      Die Verwendung von Sidekiq in Kombination mit Redis erlaubt die Ausführung von ressourcenintensiven Funktionalitäten im Hintergrund mit loser Kopplung zur eigentlichen Anwendung.
-    </div>
-    <h3>Technologie:</h3>
+    <div class="desc">Die Anwendung „quetch“ ist das Ergebnis einer Teamarbeit im Rahmen des Foursquare-Hackathons 2013. Sie erlaubt Benutzern, Aufgaben zu stellen und Freunde herauszufordern. Die Aufgaben sind jeweils an eine konkrete Ortsangabe und an eine bestimmte Kategorie gebunden. Anhand von Check-Ins auf Foursquare wird der aktuelle Benutzerstandort bestimmt, so dass umgebungsrelevante Aufgaben von Freunden ermittelt werden können. Der Aufgabensteller ist immer auf dem aktuellen Stand, da die Aufgaben durch Benutzerinteraktionen aktualisiert werden immer einem bestimmten Status vorweisen.<br>
+      Die Verwendung von <a href="http://mperham.github.com/sidekiq/" rel="external">Sidekiq</a> in Kombination mit Redis erlaubt die Ausführung von ressourcenintensiven Funktionalitäten im Hintergrund mit loser Kopplung zur eigentlichen Anwendung.</div>
+    <h3>Technologien:</h3>
     <ul class="tech">
       <li><a href="http://rubyonrails.org/" rel="external">Ruby on Rails</a></li>
       <li><a href="http://www.postgresql.org/" rel="external">PostgreSQL</a></li>
@@ -54,10 +52,8 @@ title: Projekte
       <li>Status: <em>development</em>&nbsp;<i class="icon-cogs"></i></li>
       <li><a href="https://formbot.herokuapp.com" rel="external">formbot.herokuapp.com</a></li>
     </ul>
-    <div class="desc">
-      Mit Hilfe der Anwendung formbot lässt sich die Einbindung von Kontaktformulare in Websites vereinfachen. Statt eine serverseitige Mail-Komponente zu integrieren, bietet der Dienst eine einfache Möglichkeit die Formulardaten zu verarbeiten und über definierbare Vorlagen an eine E-Mail-Adresse weiterzuleiten. Die Verwendung der Liquid-Markup-Sprache bietet dabei vielfältige Möglichkeiten bei der Verarbeitung der Daten.
-    </div>
-    <h3>Technologie:</h3>
+    <div class="desc">Mit Hilfe der Anwendung formbot lässt sich die Einbindung von Kontaktformularen in Websites vereinfachen. Statt eine serverseitige Mail-Komponente zu integrieren, bietet der Dienst eine simple Möglichkeit, die Formulardaten zu verarbeiten und über definierbare Vorlagen an eine bestimmte E-Mail-Adresse weiterzuleiten. Die Verwendung der Liquid-Markup-Sprache bietet dabei vielfältige Möglichkeiten bei der Verarbeitung der Daten.</div>
+    <h3>Technologien:</h3>
     <ul class="tech">
       <li><a href="http://rubyonrails.org/" rel="external">Ruby on Rails</a></li>
       <li><a href="http://www.postgresql.org/" rel="external">PostgreSQL</a></li>
@@ -67,16 +63,14 @@ title: Projekte
   </li>
   <li class="spacer"><hr></li>
   <li id="erweiterungen-de">
-    <span class="year">2005&ndash;2009</span>
+    <span class="year">2005&nbsp;&ndash;&nbsp;2009</span>
     <h2>erweiterungen.de</h2>
     <ul class="meta unstyled well well-small">
       <li>Status: <em>discontinued</em>&nbsp;<i class="icon-ban-circle"></i></li>
       <li><a href="http://www.erweiterungen.de" rel="external">erweiterungen.de</a></li>
     </ul>
-    <div class="desc">
-      Das Portal erweiterungen.de war über eine Zeit von fünf Jahren die zentrale Anlaufstelle für deutschsprachige Erweiterungen für Mozilla-basierte Anwendungen. Als einfache Liste gestartet, wurden dem Projekt schnell immer mehr Aufgaben zuteil. Insbesondere das Management von verschiedenen Versionen hinsichtlich der Kompatibilität mit Anwendungsversionen und deren Aktualisierungen war eine eine besondere Herausforderung in diesem Projekt. Aufgrund der hohen Zugriffszahlen bedurfte es weiterhin ausgefeilten Caching-Strategien, um die Serverlast möglichst gering zu halten und dennoch eine anwenderfreundliche Umgebung bereitzustellen.
-    </div>
-    <h3>Technologie:</h3>
+    <div class="desc">Das Portal erweiterungen.de war über eine Zeit von fünf Jahren die zentrale Anlaufstelle für deutschsprachige Erweiterungen für Mozilla-basierte Anwendungen. Als einfache Liste gestartet, wurden dem Projekt schnell immer mehr und immer komplexere Aufgaben zuteil. Insbesondere das Management von verschiedenen Versionen hinsichtlich der Kompatibilität mit Anwendungsversionen und deren Aktualisierungen war eine besondere Herausforderung in diesem Projekt. Aufgrund der hohen Zugriffszahlen bedurfte es weiterhin ausgefeilten Caching-Strategien, um die Serverlast möglichst gering zu halten und dennoch eine anwenderfreundliche Umgebung bereitzustellen.</div>
+    <h3>Technologien:</h3>
     <ul class="tech">
       <li><a href="http://php.net/">PHP</a>-basiert</li>
       <li><a href="http://www.smarty.net/" rel="external">Smarty (PHP Template Engine)</a></li>
